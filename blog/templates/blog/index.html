@@ -10,15 +10,9 @@
 {% endblock %}    
 
 {% block content %}
-    <header id="main-navigation">
-        <h1><a href="">Sush's Blog</a></h1>
-        <nav>
-            <a href="">All posts</a>
-        </nav>
-    </header>
     <section id="welcome"> 
         <header>
-            <img src="" alt="Sushovit- I own this Blog."/>
+            <img src="{% static 'blog/images/my_pic.jpg' %}" alt="Sushovit- I own this Blog."/>
             <h2>SUSHOVIT'S BLOG</h2>
         </header>
         <p>Hey there, I am Sushovit and that's all you need to know.</p>
@@ -28,21 +22,7 @@
         <h2>My latest thought</h2>
 
         <ul>
-            <li>
-                <article class="post">
-                    <a href="">
-                        <img src="" alt="Mountain Hiking"/>
-                        <div class="post__content">
-                            <h3>Mountain Hiking</h3>
-                            <p>You got to see this view as it is such enjoyable and 
-                                refreshing. If you need a break from this exhausting day
-                                day  routine, come hike to the mountains and endulge 
-                                youself in the nature.
-                            </p>
-                        </div>
-                    </a>
-                </article>
-            </li>
+           {% include 'blog/includes/post.html' %}
         </ul>
     </section>
     <section id="about">
