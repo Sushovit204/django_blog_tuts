@@ -15,8 +15,8 @@
   .post a:hover,
   .post a:active {
     transform: scale(1.1);
-    background-color: #a7fbd3;
-    color: white;
+    background-color: #e9f4ef;
+    color: rgb(177, 52, 109);
   }
   
   .post img {
